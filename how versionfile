@@ -1,0 +1,140 @@
+[33mcommit 258b7968ac85cea063a5f3e922368a277448bb2a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Rojin <rojin.tarigh73@gmail.com>
+Date:   Sun May 22 20:13:59 2022 +0430
+
+    added fullvideo.html
+
+[1mdiff --git a/background-video.mp4 b/background-video.mp4[m
+[1mnew file mode 100644[m
+[1mindex 0000000..eb9fd20[m
+Binary files /dev/null and b/background-video.mp4 differ
+[1mdiff --git a/fullvideo.html b/fullvideo.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..34ef0ac[m
+[1m--- /dev/null[m
+[1m+++ b/fullvideo.html[m
+[36m@@ -0,0 +1,29 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m	[32m<meta charset="utf-8">[m
+[32m+[m	[32m<meta name="viewport" content="width=device-width, initial-scale=1">[m
+[32m+[m	[32m<title>Full Screen Background Video</title>[m
+[32m+[m	[32m<link rel="stylesheet" href="fullvideostyle.css">[m
+[32m+[m[32m</head>[m
+[32m+[m
+[32m+[m[32m<body>[m
+[32m+[m	[32m<section class="header">[m
+[32m+[m[41m		[m
+[32m+[m		[32m<video autoplay loop class="video-background" muted plays-inline>[m
+[32m+[m		[32m<source src="background-video.mp4">[m
+[32m+[m		[32m</video>[m
+[32m+[m		[32m<div class="moon">[m
+[32m+[m		[32m</div>[m
+[32m+[m
+[32m+[m		[32m<div class="welcome-msg">[m
+[32m+[m			[32m<h1> Video Background </h1>[m
+[32m+[m			[32m<a href="#" class="btn btn-subscribe"> Subscribe </a>[m
+[32m+[m			[32m<a href="#" class="btn btn-comment"> Comment </a>[m
+[32m+[m[41m			[m
+[32m+[m		[32m</div>[m
+[32m+[m	[32m</section>[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/fullvideostyle.css b/fullvideostyle.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1d06c03[m
+[1m--- /dev/null[m
+[1m+++ b/fullvideostyle.css[m
+[36m@@ -0,0 +1,79 @@[m
+[32m+[m[32m*[m
+[32m+[m[32m{[m
+[32m+[m
+[32m+[m	[32mmargin: 0;[m
+[32m+[m	[32mpadding: 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m.header[m
+[32m+[m[32m{[m
+[32m+[m	[32mbackground: rgba(0, 0, 100, 0.4);[m
+[32m+[m	[32mheight: 100vh;[m[41m	[m
+[32m+[m[32m}[m
+[32m+[m[32m.video-background {[m
+[32m+[m	[32mposition: absolute;[m
+[32m+[m	[32mright: 0;[m
+[32m+[m	[32mbottom: 0;[m
+[32m+[m	[32mmin-height: 100%;[m
+[32m+[m	[32mmin-width: 100%;[m
+[32m+[m	[32mwidth: auto;[m
+[32m+[m	[32mheight: auto;[m
+[32m+[m	[32mz-index: -1;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m@media (min-aspect-ratio: 16/9){[m
+[32m+[m	[32m.video-background[m
+[32m+[m	[32m{[m
+[32m+[m		[32mwidth: 100%;[m
+[32m+[m		[32mheight: auto;[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m@media (max-aspect-ratio: 16/9){[m
+[32m+[m	[32m.video-background[m
+[32m+[m	[32m{[m
+[32m+[m		[32mwidth: auto;[m
+[32m+[m		[32mheight: 100%;[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m
+[32m+[m[32m.welcome-msg{[m
+[32m+[m	[32mposition: relative;[m
+[32m+[m	[32mtext-align: center;[m
+[32m+[m	[32mcolor: #fff;[m
+[32m+[m	[32mtop: 150px;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.welcome-msg h1{[m
+[32m+[m	[32mfont-size: 80px;[m
+[32m+[m	[32mfont-weight: 100;[m
+[32m+[m	[32mletter-spacing: 5px;[m
+[32m+[m	[32mmargin-bottom: 30px;[m
+[32m+[m[32m}[m
+[32m+[m[32m.btn{[m
+[32m+[m	[32mtext-decoration: none;[m
+[32m+[m	[32mfont-weight: 50;[m
+[32m+[m	[32mfont-size: 30px;[m
+[32m+[m	[32mcolor: #fff;[m
+[32m+[m	[32mcursor: pointer;[m
+[32m+[m	[32mmargin: 5px;[m
+[32m+[m	[32mpadding: 7px 22px;[m
+[32m+[m	[32mborder: 1px solid coral;[m
+[32m+[m	[32mborder-radius: 25px;[m
+[32m+[m[32m}[m
+[32m+[m[32m.moon {[m
+[32m+[m	[32mwidth: 80px;[m
+[32m+[m	[32mheight: 80px;[m
+[32m+[m	[32mborder-radius: 50%;[m
+[32m+[m	[32mbox-shadow: 15px 15px 0 0 #fff;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.btn-subscribe{[m
+[32m+[m	[32mbackground: coral;[m
+[32m+[m[32m}[m
+[32m+[m[32m.btn-comment:hover{[m
+[32m+[m	[32mbackground: coral;[m
+[32m+[m	[32mtransition: .5s;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/lo.png b/lo.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fc96540[m
+Binary files /dev/null and b/lo.png differ
+[1mdiff --git a/logo.jpg b/logo.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fc96540[m
+Binary files /dev/null and b/logo.jpg differ
