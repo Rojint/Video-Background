@@ -80,3 +80,8 @@
 	background: coral;
 	transition: .5s;
 }
+
+.time{
+	margin: 10;
+	padding: 10;
+}
